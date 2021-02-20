@@ -1,0 +1,35 @@
+<h1>予定一覧</h1>
+
+<div class="tidy">
+    <table class="table table-striped">
+      <thead>
+         <tr>
+            <th>ID</th>
+            <th>タイトル</th>
+            <th>開始日</th>
+            <th>終了日</th>
+            <th>更新日</th>
+            <th></th>
+            <th></th>
+            <th></th>
+         </tr>
+      </thead>
+      <tbody>
+        <% @post.each do |p| %>
+         <tr>
+            <td><%= p.id %></td>
+            <td><%= p.title %></td>
+            <td><%= p.start_Day %></td>
+            <td><%= p.End_Day %></td>
+            <td><%= p.updated_at.in_time_zone('Tokyo').strftime('%Y/%m/%d %H:%M:%S') %></td>
+            <td><%= link_to "確認", post_path(p), class: "btn btn-info" %></td>
+            <td><%= link_to "編集", edit_post_path(p), class: "btn btn-primary" %></td>
+            <td><%= link_to "削除", post_path(p), method: :delete, class: "btn btn-warning" %></td>
+         </tr>
+        <% end %>
+      </tbody>
+    </table>
+</div>
+
+
+
