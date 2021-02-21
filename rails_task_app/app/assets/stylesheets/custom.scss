@@ -1,0 +1,56 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* universal */
+
+// body {
+//   padding-top: 60px;
+// }
+
+// section {
+//   overflow: auto;
+// }
+
+// textarea {
+//   resize: vertical;
+// }
+
+// .center {
+//   text-align: center;
+// }
+
+// .center h1 {
+//   margin-bottom: 10px;
+// }
+
+*{
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+.collapse.navbar-collapse{
+  padding: 0px;
+}
+
+.tidy{
+  margin-top: 30px;
+}
+
+h1{
+  text-align: center;
+}
+
+p{
+  text-align: right;
+}
+
+.table.table-striped th {
+text-align: center;
+vertical-align: top;
+}
+
+
+.table.table-striped td {
+text-align: center;
+vertical-align: top;
+}
